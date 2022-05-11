@@ -4,12 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
   <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
   <title>cssMemSlider</title>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <h1 class="page_title">
+        css Mem Slider
+      </h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="slider__wrapper">
+        <div class="slider">
+          <input class="slide__move" id="input1" type="radio" name="input" checked>
+          <input class="slide__move" id="input2" type="radio" name="input">
+          <input class="slide__move" id="input3" type="radio" name="input">
+          <input class="slide__move" id="input4" type="radio" name="input">
+          <div class="slider__items">
+            <div class="slider__item item1"></div>
+            <div class="slider__item item2"></div>
+            <div class="slider__item item3"></div>
+            <div class="slider__item item4"></div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </main>
 </body>
 </html>
