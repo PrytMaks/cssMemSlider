@@ -18,7 +18,7 @@ body {
   background: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 5rem rgba(255, 255, 255, 0.9);
   color: #0b2349;
   display: table;
   margin: 0.1em auto;
@@ -27,7 +27,7 @@ body {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-45px);
+    transform: translateY(-2.813rem);
     animation-timing-function: ease-in;
     opacity: 1;
   }
@@ -35,30 +35,30 @@ body {
     opacity: 1;
   }
   40% {
-    transform: translateY(-24px);
+    transform: translateY(-1.5rem);
     animation-timing-function: ease-in;
   }
   65% {
-    transform: translateY(-12px);
+    transform: translateY(-0.75rem);
     animation-timing-function: ease-in;
   }
   82% {
-    transform: translateY(-6px);
+    transform: translateY(-0.375rem);
     animation-timing-function: ease-in;
   }
   93% {
-    transform: translateY(-4px);
+    transform: translateY(-0.25rem);
     animation-timing-function: ease-in;
   }
   25%,
   55%,
   75%,
   87% {
-    transform: translateY(0px);
+    transform: translateY(0rem);
     animation-timing-function: ease-out;
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0rem);
     animation-timing-function: ease-out;
     opacity: 1;
   }
@@ -69,9 +69,9 @@ body {
   padding: 0.4rem;
   width: calc(60% - 20px);
   background-color: #0b2349;
-  border: 6px solid rgb(158, 190, 232);
+  border: 0.375rem solid rgb(158, 190, 232);
   border-radius: 25px;
-  box-shadow: 0px 0px 23px 9px rgb(105 171 255);
+  box-shadow: 0 0 23px 9px rgb(105 171 255);
 }
 
 .slider {
@@ -173,7 +173,7 @@ body {
 .label__btn:hover .span__circle {
   transition: 0.6s;
   transition: scale(1.5);
-  border: 3px solid rgb(252, 185, 3);
+  border: 0.188rem solid rgb(252, 185, 3);
 }
 
 #input1:checked
@@ -320,7 +320,7 @@ body {
 
   .controls__text {
     flex-direction: column;
-    gap: 15px;
+    gap: 0.938rem;
   }
 
   .slider__text {
@@ -342,7 +342,7 @@ body {
   }
 
   .controls__text {
-    gap: 10px;
+    gap: 0.625rem;
   }
 }
 
