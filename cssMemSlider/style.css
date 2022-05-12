@@ -1,25 +1,25 @@
-body{
-  background: url('./bg.jpg');
+body {
+  background: url("./bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.container{
-  margin:  0 auto;
+.container {
+  margin: 0 auto;
   padding: 2rem;
   width: calc(80% - 20px);
 }
 
-.page_title{
+.page_title {
   text-align: center;
-  font-family: 'Rubik One', sans-serif;
+  font-family: "Rubik One", sans-serif;
   font-size: 50px;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+  background: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
-  color: #0B2349;
+  color: #0b2349;
   display: table;
   margin: 20px auto;
   animation: bounce 2s infinite both;
@@ -64,22 +64,22 @@ body{
   }
 }
 
-.slider__wrapper{
+.slider__wrapper {
   margin: 0 auto;
   padding: 30px;
   width: calc(60% - 20px);
-  background-color: #0B2349;
+  background-color: #0b2349;
   border: 6px solid rgb(158, 190, 232);
   border-radius: 25px;
   box-shadow: 0px 0px 23px 9px rgb(105 171 255);
 }
 
-.slider{
+.slider {
   overflow: hidden;
   padding-bottom: 2em;
 }
 
-.slide__move{
+.slide__move {
   display: none;
 }
 
@@ -90,74 +90,78 @@ body{
   transition: 1s;
 }
 
-.slider__item{
+.slider__item {
   width: 100%;
   max-height: 100%;
   transition: 1s;
 }
 
-.item1{
-  background: url('./img/1.jpg') center;
+.item1 {
+  background: url("./img/1.jpg") center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.item2{
-  background: url('./img/2.jpg') center;
+.item2 {
+  background: url("./img/2.jpg") center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.item3{
-  background: url('./img/3.jpg') center;
+.item3 {
+  background: url("./img/3.jpg") center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.item4{
-  background: url('./img/4.jpg') center;
+.item4 {
+  background: url("./img/4.jpg") center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.controls__text{
+.controls__text {
   display: flex;
+  align-items: center;
+  max-width: 77%;
+  margin: 0 auto;
 }
 
-.slider__text{
+.slider__text {
   width: 100%;
   max-width: 80%;
   overflow: hidden;
 }
 
-.text__inner{
+.text__inner {
   display: flex;
   width: 500%;
 }
 
-.txt{
-    width: 30%;
-    transition: 1s;
-    font-size: 1.5em;
-    color:  white;
+.txt {
+  width: 30%;
+  transition: 1s;
+  font-size: 1.5em;
+  color: white;
 }
 
-.slider__buttons{
+.slider__buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 20%;
+  max-width: 30%;
 }
-.label__btn{
+.label__btn {
   display: flex;
   justify-content: center;
-  height: 1.8em;;
-  width: 20%;
+  align-items: center;
+  height: 2.5em;
+  width: 30%;
   cursor: pointer;
-  border-radius: 100%
+  border-radius: 100%;
 }
-.span__circle{
+.span__circle {
   display: block;
   width: 1.2em;
   height: 1.2em;
@@ -166,56 +170,154 @@ body{
   transition: 1s;
 }
 
-.label__btn:hover .span__circle{
+.label__btn:hover .span__circle {
   transition: 0.6s;
   transition: scale(1.5);
   border: 3px solid rgb(252, 185, 3);
 }
 
-#input1:checked ~ .slider__wrapper .controls__text .slider__buttons .btn1 .span__circle,
-#input2:checked ~ .slider__wrapper .controls__text .slider__buttons .btn2 .span__circle,
-#input3:checked ~ .slider__wrapper .controls__text .slider__buttons .btn3 .span__circle,
-#input4:checked ~ .slider__wrapper .controls__text .slider__buttons .btn4 .span__circle {
+#input1:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .btn1
+  .span__circle,
+#input2:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .btn2
+  .span__circle,
+#input3:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .btn3
+  .span__circle,
+#input4:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .btn4
+  .span__circle {
   background-color: green;
 }
 
-
-#input1:active ~ .slider__wrapper .controls__text .slider__buttons .label__btn .span__circle,
-#input2:active ~ .slider__wrapper .controls__text .slider__buttons .label__btn .span__circle,
-#input3:active ~ .slider__wrapper .controls__text .slider__buttons .label__btn .span__circle,
-#input4:active ~ .slider__wrapper .controls__text .slider__buttons .label__btn .span__circle {
+#input1:active
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .label__btn
+  .span__circle,
+#input2:active
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .label__btn
+  .span__circle,
+#input3:active
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .label__btn
+  .span__circle,
+#input4:active
+  ~ .slider__wrapper
+  .controls__text
+  .slider__buttons
+  .label__btn
+  .span__circle {
   border-color: green;
 }
 
-#input1:checked ~ .slider__wrapper .slider .slider__items
- {
+#input1:checked ~ .slider__wrapper .slider .slider__items {
   margin-left: 0em;
 }
-#input2:checked ~ .slider__wrapper .slider .slider__items
- {
+#input2:checked ~ .slider__wrapper .slider .slider__items {
   margin-left: -100%;
 }
-#input3:checked ~ .slider__wrapper .slider .slider__items
- {
+#input3:checked ~ .slider__wrapper .slider .slider__items {
   margin-left: -200%;
 }
-#input4:checked ~ .slider__wrapper .slider .slider__items
- {
+#input4:checked ~ .slider__wrapper .slider .slider__items {
   margin-left: -300%;
 }
 
-#input1:checked ~ .slider__wrapper .controls__text .slider__text .text__inner .txt1{
+#input1:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__text
+  .text__inner
+  .txt1 {
   margin-left: 0em;
 }
 
-#input2:checked ~ .slider__wrapper .controls__text .slider__text .text__inner .txt1{
+#input2:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__text
+  .text__inner
+  .txt1 {
   margin-left: -30%;
 }
 
-#input3:checked ~ .slider__wrapper .controls__text .slider__text .text__inner .txt1{
+#input3:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__text
+  .text__inner
+  .txt1 {
   margin-left: -60%;
 }
 
-#input4:checked ~ .slider__wrapper .controls__text .slider__text .text__inner .txt1{
+#input4:checked
+  ~ .slider__wrapper
+  .controls__text
+  .slider__text
+  .text__inner
+  .txt1 {
   margin-left: -90%;
+}
+
+@media (max-width: 1150px) {
+  .slider__items {
+    height: 20em;
+  }
+
+  .controls__text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 968px) {
+  .slider__items {
+    height: 17em;
+  }
+
+  .slider {
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 769px) {
+  .slider__items {
+    height: 13em;
+  }
+
+  .txt {
+    font-size: 1.2em;
+  }
+
+  .controls__text {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .slider__text {
+    order: 2;
+  }
+
+  .slider__buttons {
+    order: 1;
+  }
 }
