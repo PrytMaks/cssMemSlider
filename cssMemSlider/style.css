@@ -6,14 +6,14 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   width: calc(80% - 20px);
 }
 
 .page_title {
   text-align: center;
   font-family: "Rubik One", sans-serif;
-  font-size: 50px;
+  font-size: 3.5em;
   text-transform: uppercase;
   background: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
   -webkit-background-clip: text;
@@ -21,7 +21,7 @@ body {
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.9);
   color: #0b2349;
   display: table;
-  margin: 20px auto;
+  margin: 0.1em auto;
   animation: bounce 2s infinite both;
 }
 
@@ -66,7 +66,7 @@ body {
 
 .slider__wrapper {
   margin: 0 auto;
-  padding: 30px;
+  padding: 0.4rem;
   width: calc(60% - 20px);
   background-color: #0b2349;
   border: 6px solid rgb(158, 190, 232);
@@ -299,7 +299,17 @@ body {
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767.8px) {
+  .page_title {
+    font-size: 2.2em;
+    margin: 0.1em auto;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 1rem;
+    width: calc(80% - 20px);
+  }
+
   .slider__items {
     height: 13em;
   }
@@ -319,5 +329,51 @@ body {
 
   .slider__buttons {
     order: 1;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 620px) {
+  .slider__items {
+    height: 10em;
+  }
+  .slider {
+    padding-bottom: 0.5em;
+  }
+
+  .controls__text {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 321.8px) {
+  .container {
+    margin: 0 auto;
+    padding: 0.1rem;
+    padding-bottom: 0.8em;
+    width: 80%;
+  }
+
+  .page_title {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  .slider__wrapper {
+    padding: 0.5rem;
+    width: calc(60% - 10px);
+    background-color: #0b2349;
+  }
+
+  .slider__items {
+    height: 5em;
+  }
+
+  .txt {
+    font-size: 0.7em;
+  }
+
+  .span__circle {
+    width: 0.7em;
+    height: 0.7em;
   }
 }
